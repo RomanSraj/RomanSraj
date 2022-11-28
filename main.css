@@ -1,0 +1,74 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: white;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: url(https://d36mxiodymuqjm.cloudfront.net/website/guilds/brawls/bg_brawls.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.glass-container {
+    backdrop-filter: blur(10px);
+}
+
+div {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow-y: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+    font-size: 150%;
+}
+
+td,
+th {
+    text-align: left;
+}
+
+thead {
+    box-shadow: 0 3px 6px black;
+    background-color: royalblue;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(127, 255, 212, 0.123);
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(188, 143, 143, 0.123);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.item-1 {
+    grid-column: 1/3;
+    height: 3%;
+    background-color: rgba(188, 143, 143, 0.123);
+}
+
+table tr.active {
+    background: #ccc;
+}

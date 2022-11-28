@@ -1,0 +1,57 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="main.css">
+
+<body>
+    <div class="glass-container">
+        <div class="item-1">
+            <input id="search-input" list="guildList" style="color: black;" />
+            <datalist id="guildList"></datalist>
+        </div>
+        <div class="grid-container">
+            <div class="item-2" style="background-color: rgb(9, 50, 77);"></div>
+            <div class="item-3">
+                <table class="table table-striped">
+                    <tr>
+                        <th data-name="guildBrawls" data-column="name" data-order="asc">Guild &#9670</th>
+                        <th data-name="guildBrawls" data-column="wins" data-order="asc">Wins &#9670</th>
+                        <th data-name="guildBrawls" data-column="losses" data-order="asc">Losses &#9670</th>
+                        <th data-name="guildBrawls" data-column="draws" data-order="asc">Draws &#9670</th>
+                        <th data-name="guildBrawls" data-column="member_merits_payout" data-order="asc">Player Merits
+                            &#9670
+                        </th>
+                    </tr>
+                    <tbody id="guildBrawlsTable"></tbody>
+                </table>
+            </div>
+            <div class="item-4">
+                <table class="table table-striped">
+                    <tr>
+                        <th data-name="guildOverview" data-column="cycle" data-order="asc">Cycle &#9670</th>
+                        <th data-name="guildOverview" data-column="brawl_level" data-order="asc">Tier &#9670</th>
+                        <th data-name="guildOverview" data-column="brawl_rank" data-order="asc">Rank &#9670</th>
+                        <th data-name="guildOverview" data-column="wins" data-order="asc">Wins &#9670</th>
+                        <th data-name="guildOverview" data-column="losses" data-order="asc">Losses &#9670</th>
+                        <th data-name="guildOverview" data-column="draws" data-order="asc">Draws &#9670</th>
+                        <th data-name="guildOverview" data-column="total_merits_payout" data-order="asc">Total Merits
+                            &#9670
+                        </th>
+                    </tr>
+                    <tbody id="guildOverviewTable" data-guild_id="0" data-brawl_id="0"></tbody>
+                </table>
+            </div>
+            <div class="item-5">
+                <table class="table table-striped">
+                    <tr>
+                        <th data-name="singleBrawl" data-column="player" data-order="asc">Player &#9670</th>
+                        <th data-name="singleBrawl" data-column="fray_index" data-order="asc">Fray &#9670</th>
+                        <th data-name="singleBrawl" data-column="wins" data-order="asc">Wins &#9670</th>
+                        <th data-name="singleBrawl" data-column="losses" data-order="asc">Losses &#9670</th>
+                        <th data-name="singleBrawl" data-column="draws" data-order="asc">Draws &#9670</th>
+                    </tr>
+                    <tbody id="singleBrawlTable"></tbody>
+                </table>
+            </div>
+            <script src="app.js"></script>
+        </div>
+    </div>
+</body>
